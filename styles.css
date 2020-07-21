@@ -39,6 +39,7 @@ body {
   position: relative;
   z-index: 2;
   animation: typing .5s linear infinite;
+  animation: laptopLight 96s ease infinite;
 }
 
 .desk {
@@ -64,7 +65,7 @@ body {
   left: 18vw;
   top: 5vh;
   background-color: rgba(175, 250, 250, 1);
-  animation: sunriseSunset 96s linear infinite;
+  animation: sunriseSunset 96s ease infinite;
 }
 
 .pane {
@@ -215,10 +216,31 @@ body {
   84% {
     background-color: rgba(50, 150, 225, 1);
   }
-  80% {
+  90% {
     background-color: rgba(125, 225, 250, 1);
   }
   100% {
     background-color: rgba(125, 225, 250, 1);
+  }
+ }
+
+ @keyframes laptopLight {
+  0% {
+    box-shadow: 1px 2px 3px #9a9a9a;
+  }
+  28% {
+    box-shadow: 1px 2px 3px #9a9a9a;
+  }
+  32% {
+    box-shadow: 0px -20px 30px -7px rgba(195,242,253,1);
+  }
+  80% {
+    box-shadow: 0px -20px 30px -7px rgba(195,242,253,1);
+  }
+  84% {
+    box-shadow: 1px 2px 3px #9a9a9a;
+  }
+  100% {
+    box-shadow: 1px 2px 3px #9a9a9a;
   }
  }
