@@ -38,6 +38,7 @@ body {
   margin: -7em auto;
   position: relative;
   z-index: 2;
+  animation: typing .5s linear infinite;
 }
 
 .desk {
@@ -62,7 +63,8 @@ body {
   position: absolute;
   left: 18vw;
   top: 5vh;
-  background-color: rgba(200, 250, 250, 1);
+  background-color: rgba(175, 250, 250, 1);
+  animation: sunriseSunset 96s linear infinite;
 }
 
 .pane {
@@ -138,28 +140,25 @@ body {
   35% {
       transform: rotateZ(-4deg);
   }
-  38% {
-      transform: rotateZ(2deg);
-  }
-  42% {
+  40% {
       transform: rotateZ(2deg);
   }
   45% {
-      transform: rotateZ(-4deg);
+      transform: rotateZ(2deg);
   }
   50% {
+      transform: rotateZ(-4deg);
+  }
+  55% {
       transform: rotateZ(0deg);
   }
   70% {
       transform: rotateZ(0deg);
   }
-  82% {
-      transform: rotateZ(0deg);
-  }
-  85% {
+  75% {
       transform: rotateZ(4deg);
   }
-  90% {
+  85% {
       transform: rotateZ(4deg);
   }
   100% {
@@ -167,24 +166,59 @@ body {
   }
 }
 
-.test {
-  color: rgba(5, 5, 5, 1);
-  color: rgba(5, 20, 35, 1);
-  color: rgba(35, 5, 35, 1);
-  color: rgba(50, 10, 10, 1);
-  color: rgba(150, 50, 25, 1);
-  color: rgba(225, 175, 50, 1);
-  color: rgba(250, 250, 225, 1);
-  color: rgba(200, 250, 225, 1);
-  color: rgba(175, 250, 225, 1);
-  color: rgba(125, 250, 250, 1);
-  color: rgba(100, 225, 250, 1);
-  color: rgba(50, 175, 250, 1);
-  color: rgba(250, 225, 75, 1);
-  color: rgba(225, 125, 50, 1);
-  color: rgba(200, 75, 50, 1);
-  color: rgba(125, 25, 50, 1);
-  color: rgba(35, 5, 35, 1);
-  color: rgba(5, 20, 35, 1);
-  color: rgba(5, 5, 5, 1);
+@keyframes typing {
+  0% {
+      transform: rotateZ(-.25deg);
+  }
+  50% {
+      transform: rotateZ(.25deg);
+  }
+  100% {
+      transform: rotateZ(-.25deg);
+  }
 }
+
+@keyframes sunriseSunset {
+  0% {
+    background-color: rgba(125, 225, 250, 1);
+  }
+  24% {
+    background-color: rgba(125, 225, 250, 1);
+  }
+  28% {
+    background-color: rgba(50, 150, 225, 1);
+  }
+  32% {
+    background-color: rgba(25, 75, 150, 1);
+  }
+  36% {
+    background-color: rgba(10, 25, 75, 1);
+  }
+  40% {
+    background-color: rgba(10, 10, 40, 1);
+  }
+  44% {
+    background-color: rgba(10, 10, 10, 1);
+  }
+  68% {
+    background-color: rgba(10, 10, 10, 1);
+  }
+  72% {
+    background-color: rgba(10, 10, 40, 1);
+  }
+  76% {
+    background-color: rgba(10, 25, 75, 1);
+  }
+  80% {
+    background-color: rgba(25, 75, 150, 1);
+  }
+  84% {
+    background-color: rgba(50, 150, 225, 1);
+  }
+  80% {
+    background-color: rgba(125, 225, 250, 1);
+  }
+  100% {
+    background-color: rgba(125, 225, 250, 1);
+  }
+ }
