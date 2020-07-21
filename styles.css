@@ -2,18 +2,23 @@ body {
   margin: 0;
 }
 
+/* CHARACTER STYLING */
+
 .character {
   padding: 0;
   height: 21vw;
   width: 21vw;
   margin-left: 55vw;
   margin-top: 28vh;
+  position: relative;
+  z-index: 1;
 }
 
 .person {
   background: url('./img/bitmoji.png') no-repeat center center scroll;
   background-color: #fff;
   background-size: contain;
+  border-radius: 50%;
   height: 15em;
   width: 15em;
   margin: auto;
@@ -30,7 +35,7 @@ body {
   width: 18em;
   margin: -7em auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .desk {
@@ -44,14 +49,72 @@ body {
   left: 25vw;
 }
 
+
+/* WINDOW STYLING */
+
+.window {
+  height: 22rem;
+  width: 21rem;
+  display: flex;
+  padding: 4px;
+  position: absolute;
+  left: 18vw;
+  top: 5vh;
+}
+
+.pane {
+  height: 91%;
+  width: 45%;
+}
+
+.window,
+.pane {
+  border: 1em solid rgba(150, 150, 150, 1);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px 10px rgba(50,50,50,0.75);
+}
+
+
+/* MOBILE RESPONSIVE-NESS */
+
 @media only screen and (max-width: 1000px) {
+  /* body {
+    background-color: blue;
+  } */
   .desk {
+    left: 10vw;
+  }
+
+  .window {
+    top: 3vh;
     left: 10vw;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  /* body {
+    background-color: red;
+  } */
   .desk {
     left: 0;
+  }
+
+  .window {
+    height: 19rem;
+    width: 15rem;
+    padding: 1px;
+    left: 2vw;
+    top: 4vh;
+  }
+
+  .pane {
+    height: 93%;
+    width: 44%;
+  }
+
+  .window,
+  .pane {
+    border-width: .65em;
+    box-shadow: inset 0px 0px 5px 5px rgba(50,50,50,0.75);
   }
 }
