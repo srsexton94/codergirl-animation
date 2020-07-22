@@ -5,6 +5,7 @@ A study-aide application for developers with an intricately animated interface a
 
 The app was built in celebration of a professional milestone and as such the character is in my likeness and the app features homeage to the schools and institutions that helped me reach this goal :)
 
+
 ## App Screenshots
 
 *"Daytime"*
@@ -12,6 +13,15 @@ The app was built in celebration of a professional milestone and as such the cha
 
 *"Nightime"*
 ![](./img/nightime.png)
+
+
+## Technologies
+* HTML
+* CSS
+
+...That's it!  An exercise in the basics this project let me delve more deeply into a lot of exciting styling and animation offerred natively in CSS
+Multimedia from Bitmoji and Spotify!
+
 
 ## Future Goals
 In future iterations of this project I would like to...
