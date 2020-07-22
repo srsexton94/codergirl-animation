@@ -1,14 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 body {
   margin: 0;
   background-color: rgba(250, 230, 210, 1);
   animation: wallLighting 48s ease infinite;
 }
 
+/* MUSIC PLAYER STYLING */
+
 iframe {
   position: absolute;
   left: -15px;
   top: -15px;
   z-index: 99;
+}
+
+.music-instructions {
+    font-family: 'Anonymous Pro', monospace;
+    position: absolute;
+    z-index: 98;
+    top: 2px;
+    left: 60px;
+    /* width: 12em; */
+    border-right: 3px solid gray;
+    font-size: 1.25em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    animation: 
+      typewriter 8s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 /* CHARACTER STYLING */
@@ -428,5 +450,31 @@ iframe {
   100% {
     transform: translateY(-5em) translateX(-1em) scale(1);
     opacity: 0;
+  }
+}
+
+@keyframes typewriter{
+  0% {
+    width: 0;
+    border-right: 3px solid gray;
+  }
+  60% { 
+    width: 16em; 
+  }
+  96% {
+    width: 16em;
+    border-right: 3px solid gray;
+  }
+  100% {
+    width: 0;
+    border: 0;
+  }
+}
+@keyframes blinkTextCursor{
+  from {
+    border-right-color: gray;
+  }
+  to {
+    border-right-color: transparent;
   }
 }
