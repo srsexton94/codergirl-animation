@@ -6,6 +6,7 @@ body {
   animation: wallLighting 48s ease infinite;
 }
 
+
 /* MUSIC PLAYER STYLING */
 
 iframe {
@@ -29,9 +30,10 @@ iframe {
     overflow: hidden;
     transform: translateY(-50%);    
     animation: 
-      typewriter 8s steps(44) 1s 1 normal both,
+      typewriter 10s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 
 /* CHARACTER STYLING */
 
@@ -58,6 +60,7 @@ iframe {
     wallLighting 48s ease infinite;
 }
 
+
 /* WINDOW STYLING */
 
 .window {
@@ -83,6 +86,7 @@ iframe {
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px 10px rgba(50,50,50,0.75);
 }
+
 
 /* COFFEE STYLING */
 
@@ -144,6 +148,7 @@ iframe {
 .three {
   animation: steaming 4s ease-out 1s infinite;
 }
+
 
 /* OTHER ITEMS STYLING */
 
@@ -343,7 +348,7 @@ iframe {
   }
  }
 
- @keyframes laptopLight {
+@keyframes laptopLight {
   0% {
     box-shadow: 1px 2px 3px #9a9a9a;
   }
@@ -362,9 +367,9 @@ iframe {
   100% {
     box-shadow: 1px 2px 3px #9a9a9a;
   }
- }
+}
 
- @keyframes lampLight {
+@keyframes lampLight {
   0% {
     background-color: rgba(150, 150, 150, .5);
     border: 1px solid rgba(150, 150, 150, 1);
@@ -395,9 +400,9 @@ iframe {
     border: 1px solid rgba(150, 150, 150, 1);
     box-shadow: none;
   }
- }
+}
 
- @keyframes wallLighting {
+@keyframes wallLighting {
   0% {
     background-color: rgba(250, 230, 210, 1);
   }
@@ -440,9 +445,9 @@ iframe {
   100% {
     background-color: rgba(250, 230, 210, 1);
   }
- }
+}
 
- @keyframes steaming {
+@keyframes steaming {
   0% {
     transform: translateY(0) translateX(0) scale(0.25); 
     opacity: 0.2;
@@ -459,10 +464,10 @@ iframe {
     border-right: 3px solid gray;
   }
   60% { 
-    width: 16em; 
+    width: 15.5em; 
   }
   96% {
-    width: 16em;
+    width: 15.5em;
     border-right: 3px solid gray;
   }
   100% {
