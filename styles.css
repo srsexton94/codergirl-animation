@@ -4,6 +4,13 @@ body {
   animation: wallLighting 48s ease infinite;
 }
 
+iframe {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  z-index: 99;
+}
+
 /* CHARACTER STYLING */
 
 .character {
