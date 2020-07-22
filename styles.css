@@ -6,6 +6,18 @@ body {
   animation: wallLighting 48s ease infinite;
 }
 
+footer {
+  position: absolute;
+  top: 94vh;
+  right: 2vw;
+  text-shadow: -1px 1px 1px gray;
+  z-index: 50;
+}
+
+footer a {
+  color: #373ec8;
+  font-size: 2.25vh;
+}
 
 /* MUSIC PLAYER STYLING */
 
@@ -217,10 +229,6 @@ iframe {
 }
 
 @media only screen and (max-width: 700px) {
-  /* body {
-    border: 10px solid red;
-  } */
-
   .coffee {
     left: 35vw;
   }
