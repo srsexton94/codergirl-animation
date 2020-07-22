@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 72s ease infinite;
+  animation: wallLighting 48s ease infinite;
 }
 
 /* CHARACTER STYLING */
@@ -26,28 +26,36 @@ body {
   margin: auto;
   animation: 
     headTilt 15s ease infinite,
-    wallLighting 72s ease infinite;
+    wallLighting 48s ease infinite;
 }
 
-/* ITEMS STYLING */
+/* WINDOW STYLING */
 
-.laptop {
-  background: url('./img/laptop.png') no-repeat center center scroll;
-  background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 72s ease infinite;
-  background-size: cover;
-  border: 1px solid #9a9a9a;
+.window {
+  height: 22rem;
+  width: 21rem;
+  display: flex;
+  padding: 4px;
+  position: absolute;
+  left: 16vw;
+  top: 5vh;
+  background-color: rgba(175, 250, 250, 1);
+  animation: sunriseSunset 48s ease infinite;
+}
+
+.pane {
+  height: 91%;
+  width: 45%;
+}
+
+.window,
+.pane {
+  border: 1em solid rgba(150, 150, 150, 1);
   border-radius: 10px;
-  box-shadow: 1px 2px 3px #9a9a9a;
-  height: 12em;
-  width: 18em;
-  margin: -7em auto;
-  position: relative;
-  z-index: 3;
-  animation: 
-    typing .5s linear infinite, 
-    laptopLight 72s ease infinite;
+  box-shadow: inset 0px 0px 10px 10px rgba(50,50,50,0.75);
 }
+
+/* COFFEE STYLING */
 
 .coffee {
   height: 4.5em;
@@ -88,10 +96,50 @@ body {
     linear-gradient(to left, #eee 30%, white 5px, white 35px, white 90px, transparent 10%);
 }
 
+.steam {
+  position: absolute;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 0;
+  opacity: 0;
+}
+
+.one {
+  animation: steaming 4s ease-out infinite;
+}
+.two {
+  animation: steaming 4s ease-out .5s infinite;
+}
+.three {
+  animation: steaming 4s ease-out 1s infinite;
+}
+
+/* OTHER ITEMS STYLING */
+
+.laptop {
+  background: url('./img/laptop.png') no-repeat center center scroll;
+  background-color: rgba(250, 230, 210, 1);
+  animation: wallLighting 48s ease infinite;
+  background-size: cover;
+  border: 1px solid #9a9a9a;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #9a9a9a;
+  height: 12em;
+  width: 18em;
+  margin: -7em auto;
+  position: relative;
+  z-index: 3;
+  animation: 
+    typing .5s linear infinite, 
+    laptopLight 48s ease infinite;
+}
+
 .desk {
   background: url('./img/desk.png') no-repeat center center scroll;
   background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 72s ease infinite;
+  animation: wallLighting 48s ease infinite;
   background-size: contain;
   width: 75rem;
   height: 16rem;
@@ -109,33 +157,7 @@ body {
   position: absolute;
   top: -2vh;
   left: 65vw;
-  animation: lampLight 72s ease infinite;
-}
-
-/* WINDOW STYLING */
-
-.window {
-  height: 22rem;
-  width: 21rem;
-  display: flex;
-  padding: 4px;
-  position: absolute;
-  left: 16vw;
-  top: 5vh;
-  background-color: rgba(175, 250, 250, 1);
-  animation: sunriseSunset 72s ease infinite;
-}
-
-.pane {
-  height: 91%;
-  width: 45%;
-}
-
-.window,
-.pane {
-  border: 1em solid rgba(150, 150, 150, 1);
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 10px 10px rgba(50,50,50,0.75);
+  animation: lampLight 48s ease infinite;
 }
 
 
@@ -390,3 +412,14 @@ body {
     background-color: rgba(250, 230, 210, 1);
   }
  }
+
+ @keyframes steaming {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25); 
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-5em) translateX(-1em) scale(1);
+    opacity: 0;
+  }
+}
