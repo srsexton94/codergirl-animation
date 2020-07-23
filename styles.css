@@ -22,16 +22,36 @@ footer a {
 /* MUSIC PLAYER STYLING */
 
 iframe {
+  height: 65px;
+  width: 65px;
   position: absolute;
   left: -15px;
+}
+
+.lowfi {
   top: -15px;
   z-index: 99;
+}
+
+.cafe {
+  top: 40px;
+  z-index: 98;
+}
+
+.punk {
+  top: 95px;
+  z-index: 97;
+}
+
+.fam {
+  top: 150px;
+  z-index: 96;
 }
 
 .music-instructions {
     font-family: 'Anonymous Pro', monospace;
     position: absolute;
-    z-index: 98;
+    z-index: 90;
     top: 2px;
     left: 60px;
     /* width: 12em; */
