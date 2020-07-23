@@ -22,8 +22,6 @@ footer a {
 /* MUSIC PLAYER STYLING */
 
 iframe {
-  height: 65px;
-  width: 65px;
   position: absolute;
   left: -15px;
 }
